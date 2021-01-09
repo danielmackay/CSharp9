@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using static System.Console;
 
 namespace CSharp9
 {
@@ -10,6 +8,8 @@ namespace CSharp9
     {
         public static void Run() 
         {
+            WriteLine(nameof(InitAccessorsAndReadOnlyFields));
+
             var person = new Person { FirstName = "Mads", LastName = "Nielsen" }; // OK
             //person.LastName = "Torgersen"; // ERROR!
         }
